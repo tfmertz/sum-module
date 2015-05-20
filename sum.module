@@ -1,0 +1,18 @@
+<?php
+
+function sum_menu(){
+    $item = array();
+    $item['sum_form'] = [
+        'title' => 'Sum Form',
+        'page callback' => 'get_sum',
+        'access callback' => TRUE,
+        'type' => MENU_NORMAL_ITEM,
+
+    ];
+
+    return $item;
+}
+
+function get_sum() {
+    return 'hello';
+}
